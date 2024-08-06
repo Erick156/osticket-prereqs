@@ -22,11 +22,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>List of Prerequisites</h2>
 
-- Item 1
-- Item 2
-- Item 3
-- Item 4
-- Item 5
+- Item 1- Enable Internet Information Services (IIS)
+- Item 2- Install Web Platform Installer 
+- Item 3- Install MY SQL/ Setup Up Username & Password 
+- Item 4- Install C++ Redistributable
+- Item 5- Configure Permissions & Install Osticket
 
 <h2>Installation Steps</h2>
 
