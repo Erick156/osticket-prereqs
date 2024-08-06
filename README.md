@@ -29,7 +29,8 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 <h2>Installation Steps</h2>
 
-![Create RG_VM](https://github.com/BenW618/osticket-prereqs/assets/140227052/b8d36965-94b1-4a46-ba98-f09c800892c0)
+![image](https://github.com/user-attachments/assets/7f5ba5ab-eb90-4a8f-aa3c-cc9c02859058)
+
 
 </p>
 <p>
@@ -37,7 +38,7 @@ After logging into my Azure account, I created a Resource Group and a Windows 10
 </p>
 <br />
 
-![Enable IIS in Windows CGI](https://github.com/BenW618/osticket-prereqs/assets/140227052/d6d8f59d-5895-4c80-bf54-d7fcf582799c)
+![image](https://github.com/user-attachments/assets/59d5ae80-defb-4e25-924f-afe296dc291a)
 
 </p>
 <p>
