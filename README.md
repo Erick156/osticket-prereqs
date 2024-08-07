@@ -34,7 +34,11 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 
 </p>
 <p>
-After logging into my Azure account, I created a Resource Group and a Windows 10 Virtual Machine with 4 Virtual CPUs in that resource group. After creating the virtual machine, I used a remote desktop to connect to the virtual machine.
+
+1.Log into your Azure account.
+2.Create a Resource Group.
+3.Within the Resource Group, create a Windows 10 Virtual Machine with 4 virtual CPUs.
+4.Once the virtual machine is created, use Remote Desktop to connect to it.
 </p>
 <br />
 
@@ -42,7 +46,13 @@ After logging into my Azure account, I created a Resource Group and a Windows 10
 
 </p>
 <p>
-After connecting to the virtual machine, I first accessed the control panel. From there, I clicked the Programs tab. Next, I clicked the Turn the Features On or Off tab and proceeded to check off the boxes viewed in the picture above (Right Side). To confirm that IIS was activated, I typed 127.0.0.1 in the web browser as seen in the picture above(Left Side).
+
+1.Connect to the virtual machine.
+2.Access the Control Panel.
+3.Click on the Programs tab.
+4.Click on the "Turn Windows features on or off" option.
+5.Check the boxes as shown in the reference image on the right side.
+6.Confirm that IIS is activated by typing 127.0.0.1 in the web browser, as shown in the reference image on the left side.
 </p>
 <br />
 
@@ -50,14 +60,18 @@ After connecting to the virtual machine, I first accessed the control panel. Fro
 
 </p>
 <p>
-The next step involves many files being installed. A list of files used to download will be presented below.
- 
-- PHPManagerForIIS_V1.5.0.msi
-- rewrite_amd64_en-US.msi
-[Before installing the rest of the files, create the directory C:\PHP]
-- php-7.3.8-nts-Win32-VC15-x86.zip
-- VC_redist.x86.exe
-- mysql-5.5.62-win32.msi
+
+1.Begin the next step, which involves installing several files. The list of files to download is provided below:
+
+PHPManagerForIIS_V1.5.0.msi
+rewrite_amd64_en-US.msi
+2.Before proceeding with the rest of the installations, create the directory C:\PHP.
+
+3.Continue downloading and installing the following files:
+
+php-7.3.8-nts-Win32-VC15-x86.zip
+VC_redist.x86.exe
+mysql-5.5.62-win32.msi
 
   
 </p>
@@ -68,7 +82,10 @@ The next step involves many files being installed. A list of files used to downl
 
 </p>
 <p>
-After installing the files, I opened the IIS Manager as an administrator. Next, I clicked the PHP Manager tab and the Register new PHP version. I then typed C:\PHP\php-cgi.exe.
+1.After installing the files, open the IIS Manager as an administrator.
+2.Click on the PHP Manager tab.
+3.Select "Register new PHP version."
+4.Enter C:\PHP\php-cgi.exe as the path.
 </p>
 <br />
 
@@ -77,7 +94,13 @@ After installing the files, I opened the IIS Manager as an administrator. Next, 
 
 </p>
 <p>
-After registering PHP, I installed the osTicket file. Once the file was installed, I extracted and copied the “upload” folder to c:\inetpub\wwwroot. Within c:\inetpub\wwwroot, I renamed “upload” to “osTicket”. After this, I restarted IIS Manager and clicked the sites tab.
+
+1.After registering PHP, install the osTicket file.
+2.Once the file is installed, extract it.
+3.Copy the "upload" folder to C:\inetpub\wwwroot.
+4.Within C:\inetpub\wwwroot, rename the "upload" folder to "osTicket".
+5.Restart IIS Manager.
+6.Click on "Sites" in the IIS Manager.
 </p>
 <br />
 
@@ -86,7 +109,13 @@ After registering PHP, I installed the osTicket file. Once the file was installe
 
 </p>
 <p>
-Before I could continue, I had to fix some of the extensions. First, I went back to IIS and clicked the “PHP Manager” tab under osTicket. From there, I enabled three extensions; php_imap.dll, php_intl.dll, php_opcache.dll. Next, I refreshed the osTicket page to observe a few of the errors disappearing.
+1.Before continuing, fix some of the PHP extensions:
+2.Open IIS Manager and click on the "PHP Manager" tab under "osTicket."
+3.Enable the following extensions:
+4.php_imap.dll
+5.php_intl.dll
+6.php_opcache.dll
+7.Refresh the osTicket page to ensure that some of the errors have disappeared.
 </p>
 <br />
 
@@ -95,7 +124,11 @@ Before I could continue, I had to fix some of the extensions. First, I went back
 
 </p>
 <p>
-I pressed continue on the osTicket page. I proceeded to fill out the needed information until I reached the “Database Setting” category. I then downloaded HeidiSQL to create a new session. I put the sessions information in the “database setting “category and then proceeded to hit the "Install Now" tab.
+1.Press "Continue" on the osTicket page.
+2.Fill out the required information until you reach the "Database Setting" section.
+3.Download and install HeidiSQL to create a new session.
+4.Enter the session information into the "Database Setting" section.
+5.Click on the "Install Now" tab to proceed.
 </p>
 <br />
 
@@ -104,7 +137,7 @@ I pressed continue on the osTicket page. I proceeded to fill out the needed info
 
 </p>
 <p>
-Next, I browsed to the help desk login page: http://localhost/osTicket/scp/login.php
+Browse to the help desk login page: http://localhost/osTicket/scp/login.php.
 </p>
 <br />
 
